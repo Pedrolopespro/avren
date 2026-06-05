@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AVREN | Design System</title>
+    <!-- Google Fonts Preconnect & Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="system-page">
+    <header class="site-header">
+      <a class="brand" href="./index.html" aria-label="AVREN">
+        <img class="brand-logo" src="./assets/avren logos/padrao/avren_logo_full_horizontal_ivory_transparente.png" alt="AVREN" />
+      </a>
+      <nav class="nav-links" aria-label="Navegacao do guia">
+        <a href="#marca">Marca</a>
+        <a href="#cores">Cores</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#componentes">Componentes</a>
+      </nav>
+      <div class="header-actions-wrapper">
+        <a class="header-cta" href="./index.html">Ver LP</a>
+        <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+          <i data-lucide="menu" class="icon-menu"></i>
+        </button>
+      </div>
+    </header>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <nav class="mobile-nav-links" aria-label="Navegacao mobile">
+        <a href="#cores">Cores</a>
+        <a href="#tipografia">Tipografia</a>
+        <a href="#componentes">Componentes</a>
+        <a class="mobile-menu-cta" href="./index.html">Ver LP</a>
+      </nav>
+    </div>
+
+    <main>
+      <section class="system-hero">
+        <img class="identity-logo" src="./assets/avren logos/padrao/avren_logo_full_horizontal_ivory_transparente.png" alt="AVREN" />
+        <p class="section-kicker">Design system</p>
+        <h1>Identidade visual para decisoes patrimoniais.</h1>
+        <p>
+          Uma base visual para posicionar a AVREN como financial club premium:
+          verde profundo, dourado institucional, textura cinematografica e marca preservada
+          em alta resolucao para uso consistente.
+        </p>
+      </section>
+
+      <section class="system-section brand-system" id="marca">
+        <div class="section-heading">
+          <p class="section-kicker">Marca matriz</p>
+          <h2>O logo permanece como protagonista, com proporcao limpa e leitura premium.</h2>
+        </div>
+        <div class="logo-showcase">
+          <article class="logo-tile logo-tile-dark">
+            <img src="./assets/avren logos/padrao/avren_logo_full_horizontal_ivory_transparente.png" alt="Logo AVREN completo" />
+          </article>
+          <article class="logo-tile logo-tile-light">
+            <img src="./assets/avren logos/padrao/avren_logo_full_horizontal_ivory_transparente.png" alt="Logo AVREN completo em fundo claro" />
+          </article>
+          <article class="mark-tile">
+            <img src="./assets/avren logos/padrao/avren_icone_ivory_transparente.png" alt="Monograma AVREN" />
+            <div>
+              <strong>Simbolo isolado</strong>
+              <p>Uso em favicon, selo, avatar, placa, marca d'agua e detalhes editoriais.</p>
+            </div>
+          </article>
+        </div>
+        <div class="identity-rules">
+          <span>Area de respiro: 1x a altura do monograma</span>
+          <span>Preferir fundo verde profundo ou preto absoluto</span>
+          <span>Nunca distorcer, contornar ou alterar o dourado da marca</span>
+        </div>
+      </section>
+
+      <section class="system-section" id="cores">
+        <div class="section-heading">
+          <p class="section-kicker">60 / 30 / 10</p>
+          <h2>Uma paleta curta, profunda e memoravel.</h2>
+        </div>
+        <div class="swatch-grid">
+          <article style="--swatch: #061c17">
+            <span></span>
+            <strong>60% Verde profundo</strong>
+            <p>#061C17</p>
+          </article>
+          <article style="--swatch: #f7f6f2">
+            <span></span>
+            <strong>30% Creme editorial</strong>
+            <p>#F7F6F2</p>
+          </article>
+          <article style="--swatch: #c5a463">
+            <span></span>
+            <strong>10% Dourado AVREN</strong>
+            <p>#C5A463</p>
+          </article>
+          <article style="--swatch: #030d0b">
+            <span></span>
+            <strong>Profundidade</strong>
+            <p>#030D0B</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="system-section" id="tipografia">
+        <div class="type-specimen">
+          <div>
+            <p class="section-kicker">Inter Display</p>
+            <h2>Patrimônio exige estratégia.</h2>
+          </div>
+          <div>
+            <p class="section-kicker">Inter UI</p>
+            <p>
+              A AVREN conecta empresários, famílias e investidores de alta renda a uma estrutura
+              patrimonial sofisticada, com inteligência financeira e relacionamento próximo.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="system-section" id="componentes">
+        <div class="section-heading">
+          <p class="section-kicker">Componentes</p>
+          <h2>Elementos de interface com cara de convite, nao de formulario agressivo.</h2>
+        </div>
+        <div class="component-row">
+          <a class="primary-button" href="./index.html#contato">Agendar conversa <i data-lucide="arrow-right"></i></a>
+          <a class="secondary-button" href="./index.html#visao">Conhecer a AVREN <i data-lucide="chevron-right"></i></a>
+        </div>
+        <div class="principle-list system-principles">
+          <article>
+            <div class="principle-card-header">
+              <span>01</span>
+              <i data-lucide="pen-tool" class="card-icon"></i>
+            </div>
+            <h3>Linhas</h3>
+            <p>Bordas finas, precisas e arquitetonicas para separar sem pesar.</p>
+          </article>
+          <article>
+            <div class="principle-card-header">
+              <span>02</span>
+              <i data-lucide="layout" class="card-icon"></i>
+            </div>
+            <h3>Respiro</h3>
+            <p>Espacos amplos e hierarquia editorial para sustentar percepcao premium.</p>
+          </article>
+          <article>
+            <div class="principle-card-header">
+              <span>03</span>
+              <i data-lucide="image" class="card-icon"></i>
+            </div>
+            <h3>Imagem</h3>
+            <p>Cenas cinematicas e pouco saturadas, com atmosfera de decisao e acesso.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="system-section applications-section" id="aplicacoes">
+        <div class="section-heading">
+          <p class="section-kicker">Aplicacoes</p>
+          <h2>Materiais com presença reservada: convite privado, cartao e assinatura.</h2>
+        </div>
+        <div class="application-grid">
+          <article class="private-card">
+            <img src="./assets/avren logos/padrao/avren_icone_ivory_transparente.png" alt="" aria-hidden="true" />
+            <span>PRIVATE ACCESS</span>
+            <strong>AVREN Financial Club</strong>
+            <p>Brasilia · Patrimonio · Inteligencia · Conexoes</p>
+          </article>
+          <article class="stationery-card">
+            <span>AVREN</span>
+            <p>Valor real. Prosperidade. Longevidade.</p>
+            <small>convite reservado / junho 2026</small>
+          </article>
+          <article class="signature-card">
+            <strong>AVREN</strong>
+            <p>Financial Club</p>
+            <span>verde profundo + dourado institucional</span>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
