@@ -716,8 +716,10 @@ p {
 
 .video-wrapper {
   position: relative;
+  width: min(100%, 430px);
+  justify-self: center;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 9 / 16;
   border: 1px solid rgba(255, 255, 255, 0.16);
   border-radius: clamp(16px, 2vw, 24px);
   background: #000;
@@ -1047,7 +1049,8 @@ p {
   }
 
   .video-wrapper {
-    aspect-ratio: 1 / 0.82;
+    width: min(100%, 390px);
+    aspect-ratio: 9 / 16;
   }
 
   .footer-bottom {
