@@ -4,6 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
     lucide.createIcons();
   } else {
     const iconFallbacks = {
+      "arrow-left": "<-",
       "arrow-right": "->",
       "arrow-up-right": "↗",
       "building": "□",
@@ -123,7 +124,88 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 5. Fallback Scroll animations using IntersectionObserver for Firefox / older browsers
+  // 5. Mesa AVREN carousel
+  const solutionCarousel = document.querySelector("[data-solution-carousel]");
+
+  if (solutionCarousel) {
+    const viewport = solutionCarousel.querySelector(".solution-viewport");
+    const cards = [...solutionCarousel.querySelectorAll(".service-card")];
+    const prevButton = solutionCarousel.querySelector(".carousel-prev");
+    const nextButton = solutionCarousel.querySelector(".carousel-next");
+    const currentLabel = solutionCarousel.querySelector(".solution-current");
+    const totalLabel = solutionCarousel.querySelector(".solution-total");
+    let activeIndex = 0;
+    let scrollTimer;
+
+    const formatIndex = (index) => String(index + 1).padStart(2, "0");
+
+    const updateCarousel = (index, shouldScroll = true) => {
+      activeIndex = (index + cards.length) % cards.length;
+
+      cards.forEach((card, cardIndex) => {
+        card.classList.toggle("is-active", cardIndex === activeIndex);
+        card.setAttribute("aria-current", cardIndex === activeIndex ? "true" : "false");
+      });
+
+      currentLabel.textContent = formatIndex(activeIndex);
+      totalLabel.textContent = String(cards.length).padStart(2, "0");
+      solutionCarousel.style.setProperty("--solution-progress", activeIndex + 1);
+
+      if (shouldScroll) {
+        const card = cards[activeIndex];
+        const targetLeft = card.offsetLeft - cards[0].offsetLeft;
+
+        viewport.scrollTo({
+          left: Math.max(0, targetLeft),
+          behavior: "smooth",
+        });
+      }
+    };
+
+    const findClosestCard = () => {
+      const viewportLeft = viewport.getBoundingClientRect().left;
+      let closestIndex = 0;
+      let closestDistance = Number.POSITIVE_INFINITY;
+
+      cards.forEach((card, index) => {
+        const distance = Math.abs(card.getBoundingClientRect().left - viewportLeft);
+        if (distance < closestDistance) {
+          closestDistance = distance;
+          closestIndex = index;
+        }
+      });
+
+      updateCarousel(closestIndex, false);
+    };
+
+    prevButton.addEventListener("click", () => updateCarousel(activeIndex - 1));
+    nextButton.addEventListener("click", () => updateCarousel(activeIndex + 1));
+
+    viewport.addEventListener("keydown", (event) => {
+      if (event.key === "ArrowLeft") {
+        event.preventDefault();
+        updateCarousel(activeIndex - 1);
+      }
+
+      if (event.key === "ArrowRight") {
+        event.preventDefault();
+        updateCarousel(activeIndex + 1);
+      }
+    });
+
+    viewport.addEventListener(
+      "scroll",
+      () => {
+        window.clearTimeout(scrollTimer);
+        scrollTimer = window.setTimeout(findClosestCard, 140);
+      },
+      { passive: true }
+    );
+
+    updateCarousel(0, false);
+  }
+
+  // 6. Fallback Scroll animations using IntersectionObserver for Firefox / older browsers
   if (!CSS.supports("(animation-timeline: view()) and (animation-range: entry)")) {
     const revealElements = document.querySelectorAll(".reveal-on-scroll");
 

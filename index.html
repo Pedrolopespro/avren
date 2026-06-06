@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AVREN | Financial Club</title>
-  <meta name="description" content="AVREN é um financial club que conecta patrimônio, inteligência e relações de alto valor para empresários, famílias e investidores de alta renda." />
+  <title>AVREN | Inteligência Patrimonial para Grandes Decisões</title>
+  <meta name="description" content="Plataforma de inteligência patrimonial nascida em Brasília, com chancela XP Investimentos e mais de R$ 500 milhões sob gestão e assessoria." />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,6 +12,7 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
   <link rel="stylesheet" href="./styles.css" />
+  <!-- TODO: validar com o cliente os termos "sob gestão e assessoria", "chancela XP" e qualquer uso de marca XP antes da publicação final. -->
 </head>
 <body>
   <!-- Header with glassmorphism -->
@@ -20,14 +21,16 @@
       <img class="brand-logo" src="./assets/avren logos/padrao/avren_logo_full_horizontal_ivory_transparente.png" alt="AVREN" />
     </a>
     <nav class="nav-links" aria-label="Navegação principal">
-      <a href="#visao">Visão</a>
+      <a href="#visao">Sobre</a>
       <a href="#solucoes">Soluções</a>
-      <a href="#video">Experiências</a>
-      <a href="#parceiros">Parceiros</a>
+      <a href="#xp">XP</a>
+      <a href="#ecossistema">Ecossistema</a>
+      <a href="#brasilia">Brasília</a>
+      <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
     </nav>
     <div class="header-actions">
-      <a class="primary-button" href="#contato">Reunião privada</a>
+      <a class="primary-button" href="#contato">Reunião reservada</a>
       <button class="mobile-menu-toggle" aria-label="Abrir menu" aria-expanded="false"><i data-lucide="menu"></i></button>
     </div>
   </header>
@@ -35,12 +38,14 @@
   <!-- Mobile menu -->
   <div class="mobile-menu" aria-hidden="true">
     <nav class="mobile-nav-links" aria-label="Navegação mobile">
-      <a href="#visao">Visão</a>
+      <a href="#visao">Sobre</a>
       <a href="#solucoes">Soluções</a>
-      <a href="#video">Experiências</a>
-      <a href="#parceiros">Parceiros</a>
+      <a href="#xp">XP</a>
+      <a href="#ecossistema">Ecossistema</a>
+      <a href="#brasilia">Brasília</a>
+      <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
-      <a class="mobile-cta" href="#contato">Reunião privada</a>
+      <a class="mobile-cta" href="#contato">Reunião reservada</a>
     </nav>
   </div>
 
@@ -54,116 +59,218 @@
         <div class="hero-overlay"></div>
       </div>
       <div class="hero-content">
-        <div class="hero-badge"><span class="badge badge-outline"><i data-lucide="map-pin"></i> Financial Club · Brasília</span></div>
+        <div class="hero-badge"><span class="badge badge-outline"><i data-lucide="map-pin"></i> Plataforma patrimonial · Brasília</span></div>
         <h1 id="hero-title">Patrimônio exige <em>estratégia.</em> Grandes decisões exigem acesso.</h1>
-        <p class="hero-copy">A AVREN é um financial club para empresários, famílias e investidores de alta renda que buscam inteligência patrimonial, relações qualificadas e acesso ao ecossistema XP.</p>
+        <p class="hero-copy">A AVREN é uma plataforma de inteligência patrimonial nascida em Brasília, com chancela XP Investimentos e mais de R$ 500 milhões sob gestão e assessoria.</p>
         <div class="hero-actions">
-          <a class="primary-button" href="#contato">Agendar conversa <i data-lucide="arrow-right"></i></a>
+          <a class="primary-button" href="#contato">Solicitar reunião reservada <i data-lucide="arrow-right"></i></a>
           <a class="secondary-button" href="#visao">Conhecer a AVREN <i data-lucide="chevron-right"></i></a>
         </div>
+        <p class="hero-microcopy">Para empresários, investidores e famílias que tratam capital como construção de futuro.</p>
       </div>
       <div class="hero-service-tags" aria-label="Soluções AVREN">
         <span>Patrimônio</span>
         <span>Inteligência</span>
-        <span>Conexões</span>
-        <span>XP Private</span>
-        <span>Empresários</span>
+        <span>Mesa privada</span>
+        <span>Chancela XP</span>
+        <span>Escala nacional</span>
       </div>
       <div class="hero-scroll-indicator" aria-hidden="true"><span class="scroll-line"></span><span class="scroll-label">Scroll</span></div>
     </section>
 
     <!-- Stats bar -->
     <section class="stats-bar" aria-label="Números da AVREN">
-      <div class="stat-item"><strong class="stat-number">R$500<span class="stat-unit">mi+</span></strong><span class="stat-label">Conectados ao clube</span></div>
-      <div class="stat-item"><strong class="stat-number">10<span class="stat-unit">+</span></strong><span class="stat-label">Anos de experiência</span></div>
-      <div class="stat-item"><strong class="stat-number">XP</strong><span class="stat-label">Plataforma institucional</span></div>
-      <div class="stat-item"><strong class="stat-number">100<span class="stat-unit">%</span></strong><span class="stat-label">Independência consultiva</span></div>
+      <div class="stat-item"><strong class="stat-number">R$ 500<span class="stat-unit">mi+</span></strong><span class="stat-label">Sob gestão e assessoria</span></div>
+      <div class="stat-item"><strong class="stat-number">XP</strong><span class="stat-label">Chancela e acesso institucional</span></div>
+      <div class="stat-item"><strong class="stat-number">Brasília</strong><span class="stat-label">Origem no centro das decisões</span></div>
+      <div class="stat-item"><strong class="stat-number">Brasil</strong><span class="stat-label">Estrutura preparada para atuação nacional</span></div>
     </section>
 
     <!-- Vision section -->
     <section class="intro" id="visao">
       <div class="intro-copy">
-        <header class="section-header"><span class="tag tag-ghost"><i data-lucide="eye"></i> Nossa visão</span></header>
-        <h2><span class="text-muted">Mais que investimentos:</span> <span class="intro-title-main">um clube financeiro para proteger, expandir e conectar capital.</span></h2>
-        <p>Nascida em Brasília, a AVREN atua no centro das decisões do país para aproximar investidores de inteligência patrimonial, oportunidades qualificadas e relações que atravessam ciclos.</p>
-        <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-up-right"></i></a>
+        <header class="section-header"><span class="tag tag-ghost"><i data-lucide="eye"></i> A AVREN</span></header>
+        <h2><span class="text-muted">Mais que investimentos:</span> <span class="intro-title-main">uma mesa privada para proteger, expandir e conectar capital.</span></h2>
+        <p>A AVREN nasce para apoiar decisões patrimoniais relevantes com estratégia, discrição e visão de longo prazo.</p>
+        <p>Unimos inteligência financeira, acesso institucional e relacionamento próximo para empresários, investidores e famílias que enxergam patrimônio como responsabilidade, oportunidade e legado.</p>
+        <a class="text-link" href="#fundacao">Saiba mais <i data-lucide="arrow-up-right"></i></a>
       </div>
       <figure class="intro-media">
-        <img src="./assets/img-club.png" alt="Ambiente reservado de clube financeiro AVREN" loading="lazy" />
+        <img src="./assets/img-club.png" alt="Ambiente reservado de inteligência patrimonial AVREN" loading="lazy" />
       </figure>
     </section>
 
-    <!-- Partners carousel -->
-    <section class="partners" id="parceiros" aria-label="Nossos parceiros">
-      <p class="carousel-label">Integração com as maiores plataformas do mercado</p>
-      <div class="carousel-track" aria-hidden="true">
-        <div class="partner-item"><img src="./assets/logos bancos/xp - cópia.png" alt="XP Investimentos" /></div>
-        <div class="partner-item"><img src="./assets/logos bancos/Btg-logo-blue.png" alt="BTG Pactual" /></div>
-        <div class="partner-item"><img src="./assets/logos bancos/Itau-BBA.webp" alt="Itaú BBA" /></div>
-        <div class="partner-item partner-bradesco"><img src="./assets/logos bancos/bradesco-bbi-logo.png" alt="Bradesco BBI" /></div>
-        <div class="partner-item"><img src="./assets/logos bancos/Credit_Suisse_Logo.png" alt="Credit Suisse" /></div>
-        <div class="partner-item partner-morgan"><img src="./assets/logos bancos/Morgan_Stanley.png" alt="Morgan Stanley" /></div>
-        <!-- repeat for seamless loop -->
-        <div class="partner-item" aria-hidden="true"><img src="./assets/logos bancos/xp - cópia.png" alt="" /></div>
-        <div class="partner-item" aria-hidden="true"><img src="./assets/logos bancos/Btg-logo-blue.png" alt="" /></div>
-        <div class="partner-item" aria-hidden="true"><img src="./assets/logos bancos/Itau-BBA.webp" alt="" /></div>
-        <div class="partner-item partner-bradesco" aria-hidden="true"><img src="./assets/logos bancos/bradesco-bbi-logo.png" alt="" /></div>
-        <div class="partner-item" aria-hidden="true"><img src="./assets/logos bancos/Credit_Suisse_Logo.png" alt="" /></div>
-        <div class="partner-item partner-morgan" aria-hidden="true"><img src="./assets/logos bancos/Morgan_Stanley.png" alt="" /></div>
+    <!-- Foundation milestone -->
+    <section class="foundation-section" id="fundacao">
+      <figure class="foundation-media">
+        <img src="./assets/socios.jpg" alt="Sócios da AVREN" loading="lazy" />
+      </figure>
+      <div class="foundation-content">
+        <div class="foundation-main">
+        <h2>Uma nova estrutura patrimonial que já nasce com meio bilhão sob gestão.</h2>
+        <p>A AVREN inicia sua trajetória com uma base rara para uma nova operação patrimonial: capital relevante, relações estratégicas e uma visão clara de expansão.</p>
+        </div>
+        <div class="foundation-details">
+          <div class="foundation-number">
+            <strong>R$ 500 mi+</strong>
+            <span>sob gestão e assessoria</span>
+          </div>
+          <dl>
+            <div><dt>Marco</dt><dd>Dia zero</dd></div>
+            <div><dt>Base</dt><dd>Capital relevante</dd></div>
+            <div><dt>Escala</dt><dd>Atuação nacional</dd></div>
+          </dl>
+          <p>Mais que um número, esse marco representa confiança, tração e o início de uma mesa preparada para crescer em escala nacional.</p>
+        </div>
       </div>
     </section>
 
-    <!-- Services cards -->
+    <!-- Mesa AVREN cards -->
     <section class="services" id="solucoes">
-      <header class="section-header"><span class="tag tag-gold">Nossa atuação</span></header>
-      <h2>Um ecossistema discreto,<br>construído em torno do cliente.</h2>
-      <div class="cards-grid">
-        <article class="service-card">
-          <i data-lucide="shield-check" class="card-icon"></i>
-          <h3>Patrimônio</h3>
-          <p>Curadoria de estratégias de investimento, alocação e proteção patrimonial para decisões de longo prazo.</p>
+      <header class="section-header"><span class="tag tag-gold">Mesa AVREN</span></header>
+      <h2>Soluções para quem constrói, protege e expande patrimônio relevante.</h2>
+      <p class="section-lead">A Mesa AVREN organiza capital, acesso e inteligência em uma experiência reservada para decisões patrimoniais de longo prazo.</p>
+      <div class="solution-carousel" data-solution-carousel>
+        <div class="solution-viewport" tabindex="0" aria-label="Soluções da Mesa AVREN">
+          <div class="solution-grid">
+        <article class="service-card is-active" data-card-number="01">
+          <span class="card-index">01</span>
+          <h3>Portfólio Estratégico</h3>
+          <p>Carteiras alinhadas ao perfil, momento e objetivos de cada cliente.</p>
           <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
         </article>
-        <article class="service-card">
-          <i data-lucide="compass" class="card-icon"></i>
-          <h3>Inteligência</h3>
-          <p>Leitura de mercado, acesso a especialistas e visão estratégica para transformar informação em decisão.</p>
+        <article class="service-card" data-card-number="02">
+          <span class="card-index">02</span>
+          <h3>Wealth Planning</h3>
+          <p>Planejamento patrimonial, sucessório e fiscal para proteção e continuidade.</p>
           <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
         </article>
-        <article class="service-card">
-          <i data-lucide="network" class="card-icon"></i>
-          <h3>Conexões</h3>
-          <p>Relacionamentos qualificados entre capital, negócios e pessoas que compartilham a mesma ambição de prosperidade.</p>
+        <article class="service-card" data-card-number="03">
+          <span class="card-index">03</span>
+          <h3>AVREN Global</h3>
+          <p>Estratégias para diversificação internacional e exposição global do patrimônio.</p>
           <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
         </article>
-        <article class="service-card cta-card">
-          <i data-lucide="phone" class="card-icon"></i>
-          <h3>Conversar com a AVREN</h3>
-          <p>Inicie uma conversa reservada para entender como podemos estruturar seu patrimônio.</p>
-          <a class="primary-button" href="#contato">Agendar reunião <i data-lucide="arrow-right"></i></a>
+        <article class="service-card" data-card-number="04">
+          <span class="card-index">04</span>
+          <h3>Crédito & Liquidez</h3>
+          <p>Soluções para acessar liquidez com inteligência e preservar decisões de longo prazo.</p>
+          <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
         </article>
+        <article class="service-card" data-card-number="05">
+          <span class="card-index">05</span>
+          <h3>Empresas & Sócios</h3>
+          <p>Estratégias que conectam patrimônio pessoal, empresa, caixa e crescimento.</p>
+          <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </article>
+        <article class="service-card" data-card-number="06">
+          <span class="card-index">06</span>
+          <h3>Family & Legacy</h3>
+          <p>Organização patrimonial para famílias que pensam em sucessão, continuidade e legado.</p>
+          <a class="text-link" href="#contato">Saiba mais <i data-lucide="arrow-right"></i></a>
+        </article>
+          </div>
+        </div>
+        <div class="solution-controls">
+          <div class="solution-arrows">
+            <button class="carousel-button carousel-prev" type="button" aria-label="Solução anterior">
+              <i data-lucide="arrow-left"></i>
+            </button>
+            <button class="carousel-button carousel-next" type="button" aria-label="Próxima solução">
+              <i data-lucide="arrow-right"></i>
+            </button>
+          </div>
+          <div class="solution-progress" aria-live="polite">
+            <span class="solution-current">01</span>
+            <span class="solution-progress-line" aria-hidden="true"><i></i></span>
+            <span class="solution-total">06</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- XP band -->
-    <section class="xp-band" aria-label="AVREN na XP">
-      <header class="section-header"><span class="tag tag-ghost"><i data-lucide="building-2"></i> AVREN na XP</span></header>
-      <h2>Independência consultiva com acesso ao topo do mercado.</h2>
-      <p>A proximidade com a XP amplia a capacidade da AVREN de conectar seus membros a frentes estratégicas, soluções financeiras robustas e uma rede institucional preparada para demandas de alta complexidade.</p>
-      <div class="badge-group">
-        <span class="badge badge-pill"><i data-lucide="check"></i> Clube financeiro privado</span>
-        <span class="badge badge-pill"><i data-lucide="check"></i> Plataforma XP</span>
-        <span class="badge badge-pill"><i data-lucide="check"></i> Alto padrão</span>
-        <span class="badge badge-pill"><i data-lucide="check"></i> Brasília</span>
+    <section class="xp-band" id="xp" aria-label="Chancela XP">
+      <figure class="xp-media">
+        <img src="./assets/xp.jpeg" alt="XP Investimentos" loading="lazy" />
+      </figure>
+      <div class="xp-copy">
+        <header class="section-header"><span class="tag tag-ghost"><i data-lucide="building-2"></i> Chancela XP</span></header>
+        <h2>Acesso institucional.<br>Visão AVREN.</h2>
+        <div class="xp-description">
+          <p>A relação com a XP Investimentos amplia o acesso da AVREN a uma das principais estruturas do mercado financeiro brasileiro.</p>
+          <p>A partir dessa base, a AVREN entrega uma experiência mais próxima, estratégica e reservada para quem precisa tomar decisões patrimoniais com clareza.</p>
+        </div>
+        <div class="badge-group">
+          <span class="badge badge-pill"><i data-lucide="check"></i> Chancela XP Investimentos</span>
+          <span class="badge badge-pill"><i data-lucide="check"></i> Acesso institucional</span>
+          <span class="badge badge-pill"><i data-lucide="check"></i> Visão AVREN</span>
+        </div>
       </div>
     </section>
 
-    <!-- Video section -->
-    <section class="video-section" id="video">
+    <!-- Ecosystem section -->
+    <section class="ecosystem-section" id="ecossistema">
+      <header class="section-header"><span class="tag tag-gold">Ecossistema</span></header>
+      <h2>Um ecossistema discreto, construído em torno do cliente.</h2>
+      <p class="section-lead">A AVREN conecta patrimônio, inteligência, relações e visão de futuro em uma estrutura pensada para decisões consistentes.</p>
+      <div class="ecosystem-grid">
+        <article><h3>Patrimônio</h3><p>Proteção, organização e expansão do capital.</p></article>
+        <article><h3>Inteligência</h3><p>Leitura de cenário, riscos e oportunidades.</p></article>
+        <article><h3>Conexões</h3><p>Acesso a relações e soluções qualificadas.</p></article>
+        <article><h3>Legado</h3><p>Estratégia para continuidade e longo prazo.</p></article>
+      </div>
+    </section>
+
+    <!-- Process section -->
+    <section class="process-section" id="experiencia">
+      <header class="section-header"><span class="tag tag-gold">Experiência AVREN</span></header>
+      <h2>Como funciona a experiência AVREN.</h2>
+      <p>Um processo reservado para entender, estruturar e acompanhar decisões patrimoniais relevantes.</p>
+      <div class="process-grid">
+        <article class="process-step">
+          <span>01</span>
+          <h3>Diagnóstico patrimonial</h3>
+          <p>Entendimento do momento, perfil, objetivos e prioridades do cliente.</p>
+        </article>
+        <article class="process-step">
+          <span>02</span>
+          <h3>Estratégia personalizada</h3>
+          <p>Construção de uma visão patrimonial alinhada ao cenário e ao longo prazo.</p>
+        </article>
+        <article class="process-step">
+          <span>03</span>
+          <h3>Curadoria e acesso</h3>
+          <p>Conexão com soluções, especialistas e oportunidades compatíveis com a estratégia.</p>
+        </article>
+        <article class="process-step">
+          <span>04</span>
+          <h3>Acompanhamento contínuo</h3>
+          <p>Revisões estratégicas conforme mercado, objetivos e novas decisões.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Brasília section -->
+    <section class="brasilia-section" id="brasilia">
+      <header class="section-header"><span class="tag tag-ghost"><i data-lucide="map-pin"></i> Origem estratégica</span></header>
+      <h2>Nascida em Brasília.<br>Preparada para o Brasil.</h2>
+      <p>Brasília não é apenas o endereço da AVREN. É o ponto de partida de uma estrutura criada no centro das decisões nacionais.</p>
+      <p>A partir dessa origem, a AVREN se posiciona para atender empresários, investidores e famílias que buscam estratégia, discrição e acesso qualificado em escala nacional.</p>
+      <div class="badge-group">
+        <span class="badge badge-pill"><i data-lucide="map"></i> Lago Sul</span>
+        <span class="badge badge-pill"><i data-lucide="building-2"></i> Centro das decisões</span>
+        <span class="badge badge-pill"><i data-lucide="arrow-up-right"></i> Atuação nacional</span>
+      </div>
+    </section>
+
+    <!-- Movement section -->
+    <section class="video-section" id="movimento">
       <div class="video-copy">
-        <header class="section-header"><span class="tag tag-ghost"><i data-lucide="play-circle"></i> Experiências privadas</span></header>
-        <h2>O relacionamento<br>também é parte<br>da estratégia.</h2>
-        <p>Encontros reservados, jantares, conversas com especialistas e momentos de troca criam um ambiente onde grandes empresários e investidores se aproximam de ideias, mercados e pessoas certas.</p>
+        <header class="section-header"><span class="tag tag-ghost"><i data-lucide="play-circle"></i> Expansão</span></header>
+        <h2>Capital, inteligência e relacionamento em escala nacional.</h2>
+        <p>A AVREN nasce conectada a empresários, investidores, grupos privados e lideranças com atuação relevante no mercado.</p>
+        <p>Esse movimento marca o início de uma plataforma patrimonial criada para crescer com consistência, reputação e visão de longo prazo.</p>
       </div>
       <div class="video-wrapper">
         <video id="avren-video" autoplay muted loop playsinline preload="metadata" aria-label="Vídeo institucional AVREN">
@@ -176,31 +283,58 @@
 
     <!-- Audience tags -->
     <section class="audience" id="audience">
-      <header class="section-header"><span class="tag tag-ghost">Para quem decide</span></header>
-      <h2>Empresários, investidores e famílias<br>que tratam patrimônio como legado.</h2>
+      <header class="section-header"><span class="tag tag-ghost">Perfil de cliente</span></header>
+      <h2>Para empresários, investidores e famílias que tratam patrimônio como legado.</h2>
+      <p>Para quem busca proteger capital, ampliar oportunidades e tomar decisões com visão de futuro.</p>
       <div class="tag-cloud">
-        <span class="tag"><i data-lucide="briefcase"></i> Alta renda</span>
-        <span class="tag"><i data-lucide="building"></i> Empresários</span>
+        <span class="tag"><i data-lucide="briefcase"></i> Empresários</span>
+        <span class="tag"><i data-lucide="trending-up"></i> Investidores</span>
         <span class="tag"><i data-lucide="users"></i> Famílias</span>
         <span class="tag tag-gold-outline"><i data-lucide="trending-up"></i> Capital privado</span>
-        <span class="tag"><i data-lucide="map-pin"></i> Brasília</span>
+        <span class="tag"><i data-lucide="network"></i> Sucessão</span>
         <span class="tag"><i data-lucide="shield"></i> Holdings</span>
+        <span class="tag"><i data-lucide="shield-check"></i> Legado</span>
+        <span class="tag"><i data-lucide="arrow-up-right"></i> Crescimento patrimonial</span>
+      </div>
+    </section>
+
+    <!-- Leadership section -->
+    <section class="leadership-section" id="lideranca">
+      <header class="section-header"><span class="tag tag-gold">Liderança</span></header>
+      <h2>Uma mesa próxima, liderada por quem entende grandes decisões.</h2>
+      <p>A AVREN nasce da união entre capital, relacionamento e visão estratégica. Por trás da plataforma, existe uma liderança comprometida em construir uma nova referência patrimonial: mais próxima, mais conectada e preparada para atuar em escala nacional.</p>
+      <div class="leadership-grid">
+        <article>
+          <span>01</span>
+          <h3>Experiência dos fundadores</h3>
+          <p>Trajetórias conectadas ao mercado financeiro, empresários e investidores.</p>
+        </article>
+        <article>
+          <span>02</span>
+          <h3>Relação com XP</h3>
+          <p>Acesso institucional com curadoria, proximidade e visão estratégica.</p>
+        </article>
+        <article>
+          <span>03</span>
+          <h3>Visão para a AVREN</h3>
+          <p>Construir uma plataforma patrimonial nacional, reservada e relevante.</p>
+        </article>
       </div>
     </section>
 
     <!-- Contact form -->
     <section class="contact" id="contato">
       <div class="contact-copy">
-        <header class="section-header"><span class="tag tag-ghost">Conversa inicial</span></header>
-        <h2>Sua estrutura patrimonial conectada ao topo do mercado.</h2>
-        <p>Uma conversa reservada para entender seu momento, seus objetivos e as oportunidades que podem fazer sentido para a sua próxima decisão.</p>
+        <header class="section-header"><span class="tag tag-ghost">Reunião reservada</span></header>
+        <h2>Converse com uma mesa privada da AVREN.</h2>
+        <p>Solicite uma reunião reservada para avaliar seu momento patrimonial, seus objetivos e as próximas decisões.</p>
         <div class="badge-group">
-          <span class="badge badge-pill"><i data-lucide="lock"></i> 100% Confidencial</span>
-          <span class="badge badge-pill"><i data-lucide="calendar"></i> Sem compromisso</span>
+          <span class="badge badge-pill"><i data-lucide="lock"></i> Atendimento reservado</span>
+          <span class="badge badge-pill"><i data-lucide="shield-check"></i> Discrição no tratamento das informações</span>
         </div>
       </div>
       <form class="contact-form" id="contact-form" novalidate>
-        <label for="nome">Nome</label>
+        <label for="nome">Nome completo</label>
         <input id="nome" name="nome" type="text" placeholder="Seu nome completo" required autocomplete="name" />
         <label for="contato-input">Contato</label>
         <input id="contato-input" name="contato" type="text" placeholder="E‑mail ou telefone" required />
@@ -212,7 +346,10 @@
           <option>Família / holding</option>
           <option>Outro</option>
         </select>
-        <button type="submit" class="primary-button">Solicitar reunião privada <i data-lucide="arrow-right"></i></button>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Conte brevemente o que deseja estruturar"></textarea>
+        <button type="submit" class="primary-button">Solicitar reunião reservada <i data-lucide="arrow-right"></i></button>
+        <small class="form-security">Atendimento reservado. Suas informações serão tratadas com discrição.</small>
         <p class="form-note" role="status" aria-live="polite"></p>
       </form>
     </section>
@@ -224,9 +361,11 @@
       <p class="footer-tagline">Valor real. Prosperidade. Longevidade.</p>
     </div>
     <nav class="footer-nav" aria-label="Links do rodapé">
-      <a href="#visao">Visão</a>
+      <a href="#visao">Sobre</a>
+      <a href="#xp">XP</a>
       <a href="#solucoes">Soluções</a>
-      <a href="#video">Experiências</a>
+      <a href="#brasilia">Brasília</a>
+      <a href="#experiencia">Experiência</a>
       <a href="#contato">Contato</a>
     </nav>
     <div class="footer-badges">
@@ -234,11 +373,11 @@
       <span class="badge badge-outline-dim"><i data-lucide="map-pin"></i> Brasília, DF</span>
     </div>
     <div class="footer-bottom">
-      <p>© 2024 AVREN. Todos os direitos reservados.</p>
+      <p>© 2026 AVREN. Todos os direitos reservados.</p>
       <p class="footer-disclaimer">Assessoria de investimentos sujeita à regulamentação CVM.</p>
     </div>
   </footer>
 
-  <script src="./script.js"></script>
+  <script src="./script.js?v=20260605-solutions-carousel"></script>
 </body>
 </html>
